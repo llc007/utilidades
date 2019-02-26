@@ -1,116 +1,23 @@
-@extends('layout.master')
-<style>
-    .borde {
-        border: 2px solid darkolivegreen;
-    }
-
-    #contenedorTarjetas {
-        margin-top: 5%;
-        display: flex;
-        justify-content: space-between;
-        width: 90%;
-    }
-</style>
+@extends('layouts.app')
 
 @section('content')
-    <div class='tiles'>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
-        </div>
-        <div class='col'>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <div class='box'></div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in!
+                </div>
+            </div>
         </div>
     </div>
+</div>
 @endsection

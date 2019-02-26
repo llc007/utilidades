@@ -154,7 +154,7 @@ body {
     background: #36465d;
 }
 .col:nth-child(6) .box:before {
-    content: "\f13b";
+    content: "\f073";
     background: #f16528;
 }
 .col:nth-child(6) .box:after {
